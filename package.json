@@ -1,0 +1,19 @@
+{
+    "name": "p3_ohmyfood",
+    "version": "1.0.0",
+    "description": "Projet 3 - Réalisation d'animation",
+    "main": "index.js",
+    "scripts": {
+        "sass": "sass ./sass/main.scss ./public/style.css --watch --style=expanded"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mnedeleg/ohmyfood.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/mnedeleg/ohmyfood/issues"
+    },
+    "homepage": "https://github.com/mnedeleg/ohmyfood#readme"
+}
