@@ -1,0 +1,10 @@
+@mixin card-prev {
+    background-color: $colour-white;
+    box-shadow: $box-shadow $colour-black;
+    border-radius: $border;
+}
+
+@mixin card-prev($colour:$colour-black, $size:$border-size) {
+    box-shadow: $box-shadow lighten($colour, 70%);
+    border-radius: $border-size;
+}

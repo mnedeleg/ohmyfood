@@ -1,0 +1,7 @@
+@mixin footer {
+    background-color: $colour-black;
+}
+
+@mixin footer($colour:$colour-black) {
+    background-color: lighten($colour, 15%);
+}
