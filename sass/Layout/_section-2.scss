@@ -1,0 +1,7 @@
+@mixin section-2__background {
+    background-color: $colour-black;
+}
+
+@mixin section-2__background ($colour:$colour-black) {
+    background-color: lighten($colour, 95%);
+}

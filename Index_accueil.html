@@ -4,146 +4,159 @@
 <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./public/styles.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ohmyfood!</title>
 </head>
 
 <body>
     <main>
-        <header>
+        <header class="logo">
+
             <img src="images/logo/ohmyfood.png" alt="Logo ohmyfood!" />
         </header>
         <section>
             <!--section 1-->
             <div>
                 <!--block 1-->
-                <form method="post" action="traitement/php">
-                    <span class="fa-solid fa-location-dot"></span>
-                    <input type="search" value="Paris, Belleville">
-                </form>
-                <div>
-                    <h1>Réservez le menu qui vous convient</h1>
-                    <p>Découvrez des restaurants d'exception, selectionnés par nos soins</p>
+                <div class="block__form">
+                    <form method="post" action="traitement/php" class="top__form">
+                        <span class="fa-solid fa-location-dot"></span>
+                        <input class="top__form" type="search" value="Paris, Belleville">
+                    </form>
                 </div>
-                <a href="#"> Explorez nos restaurants</a>
+                <div class="heading-discover">
+                    <h1 class="heading-discover__main">Réservez le menu qui vous convient</h1>
+                    <p class="__main-light">Découvrez des restaurants d'exception, selectionnés par nos soins</p>
+
+                    <button class="btn"> Explorez nos restaurants</button>
+                </div>
                 <!--when link <a> used, W3C says <button> shouldn't be a descendant of <a>-->
 
             </div>
             <!--end block 1-->
 
-            <div>
+            <div class="block-2">
                 <!--block 2-->
 
-                <h2>Fonctionnement</h2>
-                <div>
+                <h2 class="title_h2">Fonctionnement</h2>
+                <p>1</p>
+                <div class="__mini">
                     <!--sub-block 1-->
-                    <p>1</p>
-                    <span class="fa-solid fa-mobile-screen"></span>
-                    <p>Choisissez un restaurant</p>
+
+                    <span class="fa-solid fa-mobile-screen block-2__icon"></span>
+                    <p class="block-2__paragraph">Choisissez un restaurant</p>
                 </div>
-                <div>
+                <p class="__paragraph>">2</p>
+                <div class="__mini">
                     <!--sub-block 2-->
-                    <p>2</p>
-                    <span class="fa-solid fa-list"></span>
+
+                    <span class="fa-solid fa-list block-2__icon "></span>
                     <p>Choisissez votre menu</p>
                 </div>
-                <div>
+                <p class="__paragraph>">3</p>
+                <div class=" __mini ">
                     <!--sub-block 3-->
-                    <p>3</p>
-                    <span class="fa-solid fa-store"></span>
+
+                    <span class="fa-solid fa-store block-2__icon "></span>
                     <p>Dégustez au restaurant</p>
                 </div>
             </div>
             <!--end block 2-->
         </section>
-        <!-- end section 1-->
+        <!-- end section 2-->
 
-        <section>
+        <section class="section-2 ">
             <!--section 2-->
-            <h2>restaurants</h2>
-            <div>
+            <h2 class="title_h2 ">Restaurants</h2>
+            <div class="all-card-prev">
                 <!--all cards-->
-                <div>
+                <a href="# " class="card-prev">
                     <!--single card 1-->
+                    <!--voir P2-->
+
+                    <!--<p class="card-prev__nouveau ">Nouveau</p>-->
                     <div>
-                        <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Restaurant La palette du goût">
+                        <img class="__img" " src=" images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg " alt="Restaurant La palette du goût ">
                     </div>
-                    <div>
+                    <p class="new ">Nouveau</p>
+                    <div class="__txt ">
                         <!-- card title-->
-                        <h3>La palette du goût</h3>
-                        <p>Ménilmontant</p>
+                        <h3 class="__title ">La palette du goût</h3>
+                        <p class="__title--light ">Ménilmontant</p>
                     </div>
-                    <span class="fa-solid fa-heart"></span>
-                    <span class="fa-regular fa-heart"></span>
-                </div>
+
+                </a>
+                <a href="# " class="like "><span class="fa-solid fa-heart "></span></a>
+                <!--<span class="fa-regular fa-heart "></span>-->
                 <!-- end single card 1-->
-                <div>
+                <a href="# " class="card-prev ">
                     <!--single card 2-->
-                    <div>
-                        <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Restaurant La note enchantée">
+                    <div class="__img ">
+                        <!--<p class="card-prev__nouveau ">Nouveau</p>-->
+                        <img  src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg " alt="Restaurant La note enchantée ">
                     </div>
-                    <div>
+                    <p class="new-2 ">Nouveau</p>
+                    <div class="card-prev__txt ">
                         <!-- card title-->
-                        <h3>La note enchantée</h3>
-                        <p>Charonne</p>
+                        <h3 class="__title ">La note enchantée</h3>
+                        <p class="__title--light ">Charonne</p>
                     </div>
-                    <span class="fa-solid fa-heart"></span>
-                    <span class="fa-regular fa-heart"></span>
-                </div>
+                    <!--<span class="fa-regular fa-heart "></span>-->
+                </a>
+                <a href="# " class="like "><span class="fa-solid fa-heart "></span></a>
                 <!-- end single card 2-->
-                <div>
+                <a href="# " class="card-prev ">
                     <!--single card 3-->
                     <div>
-                        <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Restaurant À la française">
+                        <img class="__img " src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg " alt="Restaurant À la française ">
                     </div>
-                    <div>
+                    <div class="v__txt ">
                         <!-- card title-->
-                        <h3>À la française</h3>
-                        <p>Cité Rouge</p>
+                        <h3 class="__title ">À la française</h3>
+                        <p class="__title--light ">Cité Rouge</p>
                     </div>
-                    <span class="fa-solid fa-heart"></span>
-                    <span class="fa-regular fa-heart"></span>
-                </div>
+                    <!--<span class="fa-regular fa-heart "></span>-->
+                </a>
+                <a href="# " class="like "><span class="fa-solid fa-heart "></span></a>
                 <!-- end single card 3-->
-                <div>
+                <a href="# " class="card-prev ">
                     <!--single card 4-->
                     <div>
-                        <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt=" Restaurant Le déclice des sens ">
+                        <img class="__img " src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg " alt=" Restaurant Le déclice des sens ">
                     </div>
-                    <div>
+                    <div class="__txt ">
                         <!-- card title-->
-                        <h3>Le déclice des sens</h3>
-                        <p>Folie-Méricourt</p>
+                        <h3 class="__title ">Le déclice des sens</h3>
+                        <p class="__title--light ">Folie-Méricourt</p>
+
                     </div>
-                    <span class="fa-solid fa-heart "></span>
-                    <span class="fa-regular fa-heart "></span>
-                </div>
+                    <!--<span class="fa-regular fa-heart "></span>-->
+                </a>
+                <a href="# " class="like "><span class="fa-solid fa-heart "></span></a>
                 <!-- end single card 4-->
             </div>
             <!--end all cards-->
         </section>
         <!-- end section 2-->
     </main>
-    <footer>
-        <div>
-            <img src="images/logo/ohmyfood@2x.svg" alt="Logo ohmyfood!">
-        </div>
-        <div>
+    <footer class="footer-container ">
+        <p class="logo-font ">ohmyfood</p>
+        <div class="f ">
             <!--group 1-->
-            <span class="fa-solid fa-utensils"></span>
-            <a href="#">Proposer un restaurant</a>
+            <span class="fa-solid fa-utensils icon__f "></span>
+            <a class="text__footer " href="# ">Proposer un restaurant</a>
         </div>
-        <div>
+        <div class="f ">
             <!--group 2-->
-            <span class="fa-solid fa-handshake-angle"></span>
-            <a href="#">Proposer un restaurant</a>
+            <span class="fa-solid fa-handshake-angle icon__f "></span>
+            <a class="text__footer " href="# ">Devenir partenaire</a>
         </div>
-        <div>
-            <a href="#">Mentions légales</a>
+        <div class="f ">
+            <a class="text__footer " href="# ">Mentions légales</a>
         </div>
-        <div>
-            <a href="#">Contact</a>
+        <div class="f ">
+            <a class="text__footer " href="# ">Contact</a>
         </div>
     </footer>
 

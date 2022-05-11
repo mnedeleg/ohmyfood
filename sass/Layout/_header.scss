@@ -1,0 +1,15 @@
+@mixin header-form {
+    background: $colour-black;
+}
+
+@mixin header-form($colour:$colour-black) {
+    background-color: lighten($colour, 90%);
+}
+
+@mixin heading-discover {
+    background: $colour-black;
+}
+
+@mixin heading-discover($colour:$colour-black) {
+    background-color: lighten($colour, 95%);
+}

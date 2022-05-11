@@ -1,0 +1,7 @@
+@mixin box-shadow--btn {
+    box-shadow: $colour-black;
+}
+
+@mixin box-shadow--btn ($colour:$colour-black) {
+    box-shadow: 5px 5px 5px lighten($colour, 80%);
+}

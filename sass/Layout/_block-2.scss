@@ -1,0 +1,17 @@
+@mixin block-2-container {
+    box-shadow: 5px 5px 5px $colour-black;
+    background-color: $colour-black;
+}
+
+@mixin block-2-container($colour:$colour-black) {
+    box-shadow: 5px 5px 5px lighten($colour, 90%);
+    background: lighten($colour, 95%);
+}
+
+@mixin block-2-hover {
+    background-color: $colour-primary;
+}
+
+@mixin block-2-hover ( $colour:$colour-primary) {
+    background: lighten($colour, 35px);
+}

@@ -1,4 +1,11 @@
-@mixin icon {
-    font-size: $icon-size;
+@mixin block-2__icon {
+    color: $colour-black;
+}
+
+@mixin block-2__icon($colour:$colour-black) {
+    color: lighten($colour, 50%);
+}
+
+@mixin block-2__icon--hover {
     color: $colour-primary;
 }
