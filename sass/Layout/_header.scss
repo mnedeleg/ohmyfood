@@ -13,3 +13,7 @@
 @mixin heading-discover($colour:$colour-black) {
     background-color: lighten($colour, 95%);
 }
+
+@mixin header-shadow($colour:$colour-black) {
+    box-shadow: 0px 3px 8px 1px lighten($colour, 40%);
+}
