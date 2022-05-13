@@ -1,10 +1,18 @@
-@mixin card {
-    display: flex;
-    flex-direction: column;
-    background: $colour-white;
-    height: 25%;
-    border-radius: 20px;
-    width: $width-full;
-    text-decoration: none;
-    color: $colour-black;
-}
+    @mixin card {
+        display: flex;
+        flex-direction: column;
+        background: $colour-white;
+        height: 25%;
+        border-radius: 20px;
+        width: $width-full;
+        text-decoration: none;
+        color: $colour-black;
+    }
+    
+    @mixin new-colour {
+        color: $colour-tertiary;
+    }
+    
+    @mixin new-colour ($colour:$colour-tertiary) {
+        color: darken($colour, 40%);
+    }

@@ -3,6 +3,5 @@
 }
 
 @mixin section__background ($colour:$colour-black) {
-    border-radius: 50px;
     background-color: lighten($colour, 95%);
 }
