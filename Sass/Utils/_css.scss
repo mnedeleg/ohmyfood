@@ -1,4 +1,332 @@
-h1 {
-    color: blue;
-    font-size: 50px;
+/***loder spinner***/
+
+.load {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    &__bar {
+        background-color: $colour-tertiary;
+        border-radius: 50px;
+        height: 80px;
+        width: 80px;
+        animation: bars 1000ms;
+    }
+}
+
+@keyframes bars {
+    0% {
+        transform: scaleY(0.5);
+    }
+    100% {
+        transform: scaleY(1.0);
+    }
+}
+
+
+/*** header ***/
+
+.logo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    box-shadow: 0px 3px 8px 1px $colour-black;
+    position: relative;
+    z-index: 5;
+    margin-bottom: 5px;
+    @include header-shadow;
+}
+
+.logo-menu {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 30px;
+}
+
+.logo-img-menu {
+    height: 40px;
+}
+
+.fa-arrow-left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-decoration: none;
+    color: $colour-black;
+    font-size: 20px;
+}
+
+.logo-img {
+    height: 40px;
+}
+
+.top__form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    color: $colour-black;
+    gap: 10px;
+    height: 40px;
+    @include header-form
+}
+
+.heading-discover {
+    background-color: $colour-black;
+    @include heading-discover;
+    padding: 30px;
+    .heading-discover__main {
+        font-size: 18px;
+        font-weight: 500;
+        text-align: center;
+    }
+    .__main-light {
+        font-weight: 200;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+}
+
+.btn {
+    display: block;
+    margin: auto;
+    color: $colour-white;
+    background-image: linear-gradient(to bottom right, $colour-secondary 15%, $colour-primary 85%);
+    padding: 15px;
+    border: none;
+    @include box-shadow--btn;
+    border-radius: 50px;
+    font-size: 12px;
+    width: 190px;
+    opacity: 1;
+    transition: all 300ms;
+    &:hover {
+        opacity: 0.85;
+        @include box-shadow--btn--dark
+    }
+}
+
+
+/***  Block 2 ***/
+
+.block-2 {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    .title_h2 {
+        @include main-title;
+    }
+    .__mini {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+        height: 60px;
+        border-radius: 20px;
+        padding-left: 10px;
+        margin-bottom: 20px;
+        @include block-2-container;
+        &:hover {
+            @include block-2-hover;
+            .block-2__icon {
+                color: $colour-primary;
+            }
+        }
+    }
+}
+
+.__icon {
+    @include block-2__icon;
+    &.block-2__icon:hover {
+        @include block-2__icon--hover;
+    }
+}
+
+.purple_circle {
+    position: relative;
+    left: -20px;
+    background-color: $colour-primary;
+    color: $colour-white;
+    border-radius: 50px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+}
+
+.test8 {
+    position: absolute;
+}
+
+
+/*** section 2 ***/
+
+.section-2 {
+    /* position: relative;
+        top: 50px;*/
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 60px;
+    @include section__background;
+    .title_h2 {
+        @include main-title;
+    }
+    .all-card-prev {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        gap: 20px;
+    }
+    .__txt {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
+}
+
+.card-prev {
+    position: relative;
+    @include card
+}
+
+.new {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    background-color: $colour-tertiary;
+    padding: 5px;
+    border-radius: 3px;
+    @include new-colour;
+}
+
+.__img {
+    @include img-card;
+}
+
+.__title {
+    @include card-title;
+}
+
+.__title--light {
+    @include card-title-light;
+}
+
+.card-prev__txt {
+    display: flex;
+    flex-direction: column;
+    align-items: space-around;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+
+/*** footer ***/
+
+.footer-container {
+    @include footer-background;
+    .logo-font {
+        font-family: Shrikhand, sans-serif;
+        color: $colour-white;
+        padding-bottom: 10px;
+    }
+    .icon__f {
+        color: $colour-white;
+        font-size: 12px;
+    }
+    .text__footer {
+        color: $colour-white;
+        text-decoration: none;
+        font-family: Roboto, sans-serif;
+        font-size: 12px;
+    }
+}
+
+.f {
+    margin-bottom: 5px;
+}
+
+
+/*** revoir les noms des mixins, certains sont un peu trop longs ***/
+
+
+/*** page menu ***/
+
+.section-menu {
+    position: relative;
+    top: 250px;
+    padding: 10px 30px 0px 30px;
+    border-radius: 50px 50px 0px 0px;
+    @include section__background;
+    .__title--M {
+        @include main-title;
+        font-family: Shrikhand, sans-serif;
+    }
+    .__menu-heading {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .__meal-heading {
+        text-transform: uppercase;
+        font-size: 17px;
+        font-weight: 300;
+        padding-top: 40px;
+        padding-bottom: 5px;
+        position: relative;
+    }
+    .__meal-heading::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 7%;
+        /* or 100px */
+        border-bottom: 3px solid $colour-tertiary;
+    }
+    .__block-menu {
+        background-color: $colour-white;
+        @include box-shadow;
+        border-radius: 20px;
+        width: 100%;
+        height: 80px;
+        padding: 20px 25px 20px 20px;
+        margin-top: 10px;
+    }
+    .__block-price {
+        display: flex;
+        justify-content: space-between;
+    }
+    .__title {
+        @include card-title;
+    }
+    .__title--light {
+        @include card-title-light;
+    }
+    .price-title-light {
+        @include price-title-light;
+    }
+    .btn2 {
+        padding-top: 50px;
+        padding-bottom: 60px;
+    }
+    .__txt {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+.link-page-menu {
+    text-decoration: none;
+    color: $colour-black;
+}
+
+.footer--1 {
+    position: relative;
+    top: 250px;
 }

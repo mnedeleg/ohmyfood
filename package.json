@@ -4,7 +4,8 @@
     "description": "Projet 3 - Réalisation d'animation",
     "main": "index.js",
     "scripts": {
-        "sass": "sass ./sass/main.scss ./public/style.css --watch --style=expanded"
+        "sass": "sass  --watch  ./sass/main.scss:./public/styles.css",
+        "node-sass": "node-sass --watch ./sass/main.scss ./public/styles.css"
     },
     "repository": {
         "type": "git",
@@ -15,5 +16,9 @@
     "bugs": {
         "url": "https://github.com/mnedeleg/ohmyfood/issues"
     },
-    "homepage": "https://github.com/mnedeleg/ohmyfood#readme"
+    "homepage": "https://github.com/mnedeleg/ohmyfood#readme",
+    "dependencies": {
+        "node-sass": "^7.0.1",
+        "sass": "^1.51.0"
+    }
 }

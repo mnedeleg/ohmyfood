@@ -1,4 +1,32 @@
-h1 {
-    color: green;
-    font-size: 50px;
-}
+/*colour*/
+
+$colour-black:black;
+$colour-white: white;
+$colour-primary: #9356DC;
+$colour-secondary: #FF79DA;
+$colour-tertiary:#99E2D0;
+
+/*shawdow*/
+
+$box-shadow: 6px 6px 20px;
+
+/*border-radius*/
+
+$border-size: 20px;
+
+/*icons-size*/
+
+$icon-size:20px;
+
+/*width*/
+
+$width-full:100%;
+
+/*padding*/
+
+$page-padding:30px;
+$footer-padding: 10px;
+
+/*font-size*/
+
+$font-size-title:25px;

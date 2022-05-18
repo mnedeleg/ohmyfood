@@ -1,1 +1,21 @@
-@import "./utils/css";
+/*Composant*/
+
+@import "./Composant/btn";
+@import "./Composant/card";
+@import "./Composant/icons";
+@import "./Composant/image";
+@import "./Composant/text";
+
+/*Layout*/
+
+@import "./Layout/block-2";
+@import "./Layout/section-2";
+@import "./Layout/header";
+@import "./Layout/footer";
+@import "./Layout/page-menu";
+
+/*Utils*/
+
+@import "./Utils/variables";
+@import "./Utils/reset";
+@import "./Utils/css";
