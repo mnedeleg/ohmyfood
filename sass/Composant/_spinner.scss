@@ -1,0 +1,39 @@
+                                                 /***loder spinner***/
+                                                 
+                                                 .load {
+                                                     width: 100%;
+                                                     height: 60px;
+                                                     display: flex;
+                                                     justify-content: space-evenly;
+                                                     align-items: center;
+                                                     &__bar {
+                                                         background-color: blue;
+                                                         /** problem when adding a $colour-tertiary variable***/
+                                                         height: 80px;
+                                                         width: 80px;
+                                                         animation: bars 1000ms backwards infinite ease-in-out alternate;
+                                                         @for $i from 1 through 5 {
+                                                             &--#{$i} {
+                                                                 animation-delay: 1000ms / 5 * $i;
+                                                             }
+                                                             &--#{$i}-inv {
+                                                                 animation-delay: 1000ms / 5 * $i + random(100)*15;
+                                                                 animation-direction: alternate-reverse;
+                                                                 animation-fill-mode: forwards;
+                                                                 background-color: blue;
+                                                             }
+                                                             &:hover {
+                                                                 animation-play-state: paused;
+                                                             }
+                                                         }
+                                                     }
+                                                 }
+                                                 
+                                                 @keyframes bars {
+                                                     0% {
+                                                         transform: scaleY(0.5);
+                                                     }
+                                                     100% {
+                                                         transform: scaleY(1.0);
+                                                     }
+                                                 }
