@@ -105,7 +105,7 @@
                 @include block-2-container;
                 &:hover {
                     @include block-2-hover;
-                    .block-2__icon {
+                    .intro-block__icon {
                         color: $colour-primary;
                     }
                 }
@@ -189,12 +189,6 @@
             .card-prev {
                 position: relative;
                 @include card;
-                // &__txt {
-                //     display: flex;
-                //     justify-content: space-between;
-                //     align-items: center;
-                //     padding: 20px;
-                // }
                 &__img {
                     @include img-card;
                 }
