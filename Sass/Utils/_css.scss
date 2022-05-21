@@ -455,4 +455,10 @@
                             gap: 30px;
                             padding-left: 30px;
                         }
+                        .block-card {
+                            .all-card-prev {
+                                display: flex;
+                                flex-direction: row;
+                            }
+                        }
                     }
