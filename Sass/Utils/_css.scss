@@ -91,6 +91,9 @@
                                 .title-h2 {
                                     @include main-title;
                                 }
+                                .intro-block__description {
+                                    font-size: 16px;
+                                }
                                 &__mini {
                                     position: relative;
                                     z-index: 1;
@@ -474,9 +477,12 @@
                                 } // Add: hover later on card
                                 .intro-block {
                                     display: flex;
-                                    padding: 10px;
+                                    flex-direction: column;
                                     gap: 50px;
-                                    ;
+                                    .intro-block__description {
+                                        font-size: 16px;
+                                        text-align: center;
+                                    }
                                     & .all-mini-block {
                                         display: flex;
                                         gap: 30px;
@@ -505,7 +511,7 @@
                                     .intro-block__icon {
                                         display: flex;
                                         flex-direction: column;
-                                        @include block-2__icon;
+                                        font-size: 20px;
                                         &__icon:hover {
                                             @include block-2__icon--hover;
                                         }
