@@ -445,26 +445,7 @@
                                             gap: 30px;
                                             padding-left: 30px;
                                         }
-                                        .block-card {
-                                            .title_h2 {
-                                                display: flex;
-                                                justify-content: center;
-                                            }
-                                            .all-card-prev {
-                                                flex-direction: column;
-                                            }
-                                            .card-prev {
-                                                flex-wrap: wrap;
-                                                &__img {
-                                                    height: 30vh;
-                                                }
-                                                &.card-prev__nouveau {
-                                                    top: 30px;
-                                                    right: 300px;
-                                                    // when I remove the & the placement is working but it is not fixed to the card ..
-                                                }
-                                            }
-                                        } // Add: hover later on card
+                                        // Add: hover later on card
                                         .intro-block {
                                             display: flex;
                                             flex-direction: column;
@@ -510,10 +491,6 @@
                                                 height: 35px;
                                                 width: 35px;
                                             }
-                                        }
-                                        .top__form {
-                                            height: 60px;
-                                            font-size: 15px;
                                         }
                                     }
                                     
@@ -593,5 +570,42 @@
                                         .top__form {
                                             height: 60px;
                                             font-size: 15px;
+                                        }
+                                        .block-menu {
+                                            top: 650px;
+                                            &__heading {
+                                                justify-content: center;
+                                                gap: 60px;
+                                            }
+                                            &__all {
+                                                display: flex;
+                                                flex-direction: row;
+                                                justify-content: space-between;
+                                                margin-left: 30px;
+                                                margin-left: 30px;
+                                            }
+                                            &__section {
+                                                display: flex;
+                                                flex-direction: column;
+                                            }
+                                            &__meal-heading {
+                                                display: flex;
+                                                justify-content: center;
+                                                position: relative;
+                                            }
+                                            &__meal-heading::before {
+                                                content: "";
+                                                display: flex;
+                                                justify-content: center;
+                                                left: 0;
+                                                bottom: 0;
+                                                width: 7%;
+                                            }
+                                        }
+                                        .footer--page-menu {
+                                            top: 590px;
+                                        }
+                                        .btn-2 {
+                                            padding-bottom: 100px;
                                         }
                                     }
