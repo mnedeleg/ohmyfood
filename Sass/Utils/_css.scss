@@ -438,15 +438,82 @@
                                     }
                                     
                                     @media screen and (min-width:768px)and (max-width:992px) {
-                                        main {
-                                            background-color: blue;
-                                        }
                                         .footer-container {
                                             display: flex;
                                             flex-direction: row;
                                             justify-content: flex-start;
                                             gap: 30px;
                                             padding-left: 30px;
+                                        }
+                                        .block-card {
+                                            .title_h2 {
+                                                display: flex;
+                                                justify-content: center;
+                                            }
+                                            .all-card-prev {
+                                                flex-direction: column;
+                                            }
+                                            .card-prev {
+                                                flex-wrap: wrap;
+                                                &__img {
+                                                    height: 30vh;
+                                                }
+                                                &.card-prev__nouveau {
+                                                    top: 30px;
+                                                    right: 300px;
+                                                    // when I remove the & the placement is working but it is not fixed to the card ..
+                                                }
+                                            }
+                                        } // Add: hover later on card
+                                        .intro-block {
+                                            display: flex;
+                                            flex-direction: column;
+                                            .intro-block__description {
+                                                font-size: 16px;
+                                                text-align: center;
+                                            }
+                                            & .all-mini-block {
+                                                display: flex;
+                                                justify-content: space-between;
+                                                width: 100%;
+                                            }
+                                            .title-h2 {
+                                                display: flex;
+                                                justify-content: center;
+                                            }
+                                            &__mini {
+                                                flex-direction: column;
+                                                gap: 20px;
+                                                width: 150px;
+                                                height: 150px;
+                                                border-radius: 20px;
+                                                padding-left: 0px;
+                                                margin-bottom: 0px;
+                                                @include block-2-container;
+                                            }
+                                            .intro-block__icon {
+                                                display: flex;
+                                                flex-direction: column;
+                                                font-size: 20px;
+                                                &__icon:hover {
+                                                    @include block-2__icon--hover;
+                                                }
+                                            }
+                                            .purple_circle {
+                                                display: flex;
+                                                justify-content: center;
+                                                align-items: center;
+                                                position: relative;
+                                                top: -10px;
+                                                left: 5px;
+                                                font-size: 15px;
+                                                height: 35px;
+                                                width: 35px;
+                                            }
+                                        }
+                                        .top__form {
+                                            height: 60px;
+                                            font-size: 15px;
                                         }
                                     }
                                     
@@ -502,12 +569,6 @@
                                                 padding-left: 0px;
                                                 margin-bottom: 0px;
                                                 @include block-2-container;
-                                                &:hover {
-                                                    @include block-2-hover;
-                                                    .intro-block__icon {
-                                                        color: $colour-primary;
-                                                    }
-                                                }
                                             }
                                             .intro-block__icon {
                                                 display: flex;
@@ -529,37 +590,8 @@
                                                 width: 35px;
                                             }
                                         }
-                                        .heading-discover {
-                                            background-color: $colour-white;
-                                            // border-bottom: solid 5px black;
-                                            &__main {
-                                                font-weight: 500;
-                                                text-align: left;
-                                            }
-                                            &__main-light {
-                                                text-align: left;
-                                            }
-                                        }
-                                        .btn {
-                                            display: flex;
-                                            justify-content: center;
-                                            align-items: center;
-                                            margin: auto 0;
-                                        }
-                                        .block__form {
-                                            display: flex;
-                                            margin-left: 30px;
-                                            width: 400px;
-                                        }
                                         .top__form {
-                                            display: flex;
-                                            justify-content: center;
-                                            align-items: center;
-                                            border: none;
-                                            color: $colour-black;
-                                            gap: 20px;
-                                            padding-left: 10px;
-                                            height: 40px;
-                                            @include header-form
+                                            height: 60px;
+                                            font-size: 15px;
                                         }
                                     }
