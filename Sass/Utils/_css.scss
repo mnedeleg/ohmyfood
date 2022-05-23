@@ -587,19 +587,25 @@
                                             &__section {
                                                 display: flex;
                                                 flex-direction: column;
+                                                width: 30%;
                                             }
                                             &__meal-heading {
                                                 display: flex;
                                                 justify-content: center;
                                                 position: relative;
+                                                margin-bottom: 15px;
                                             }
                                             &__meal-heading::before {
                                                 content: "";
+                                                position: relative;
                                                 display: flex;
-                                                justify-content: center;
-                                                left: 0;
+                                                margin-bottom: -20px;
+                                                margin-right: -45px;
                                                 bottom: 0;
-                                                width: 7%;
+                                                width: 13%;
+                                            }
+                                            .detailed-menu {
+                                                height: auto;
                                             }
                                         }
                                         .footer--page-menu {
