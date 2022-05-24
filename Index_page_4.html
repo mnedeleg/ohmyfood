@@ -5,142 +5,154 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
     <link rel="stylesheet" href="./public/styles.css " />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ohmyfood! - Le délice des sens</title>
+    <meta name="viewport " content="width=device-width, initial-scale=1.0 ">
+    <title>ohmyfood! - La délice des sens</title>
 </head>
 
 <body>
     <main>
-        <header>
+        <header class="logo-menu">
             <!--header-->
-            <a href="./Index_accueil.html" class="fa-solid fa-arrow-left"></a>
-            <img src="images/logo/ohmyfood.png " alt="Logo ohmyfood! " />
+            <a href="./index_accueil.html" class="fa-solid fa-arrow-left "></a>
+            <img class="logo-img-menu" src="images/logo/ohmyfood.png " alt="Logo ohmyfood! " />
         </header>
-        <section>
-            <!-- section 1-->
-            <div>
-                <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Restaurant La note enchantée">
+        <div>
+            <img class="img-heading" src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Restaurant La palette du goût ">
+        </div>
+        <section class="block-menu">
+            <!-- Menu section-->
+            <div class="block-menu__heading">
+                <!--Main page title-->
+                <h1 class="block-menu__title--M ">Le délice des sens</h1>
+                <div class=" heart-container">
+                    <div class="heart heart-primary big-heart"><span class="fa-regular fa-heart "></span></div>
+                    <div class="heart heart-secondary big-heart"><span class="fa-solid fa-heart "></span></div>
+                </div>
             </div>
 
-            <div>
-                <!--block title-->
-                <h1>À la française</h1>
-                <span class="fa-regular fa-heart"></span>
-            </div>
-            <div>
-                <!--all card-->
-                <div>
-                    <!-- "entrées"-->
-                    <p>entrées</p>
-                    <div>
-                        <!--starter 1-->T
-                        <div>
-                            <!--block text starter-->
-                            <h2>Tartare de thon</h2>
-                            <p>Assaisonné au yuzu</p>
+            <div class="block-menu__all">
+                <!--all cards menu-->
+                <div class="block-menu__section">
+                    <!-- " entrées "-->
+                    <p class="block-menu__meal-heading">entrées</p>
+
+                    <div class="detailed-menu__starters">
+                        <!--starter 1-->
+                        <div class="detailed-menu checked">
+                            <h2 class="detailed-menu__title ">Tartare de thon </h2>
+                            <div class="detailed-menu__space-card ">
+                                <p class=detailed-menu__title--light>Assaisonné au yuzu</p>
+                                <p class="detailed-menu__price ">25€</p>
+                            </div>
                         </div>
-                        <p>25€</p>
-                    </div>
-                    <!--end starter 1-->
-                    <div>
-                        <!--starter 2-->
-                        <div>
-                            <!--block text starter-->
-                            <h2>Bouchée de homard croustillant</h2>
-                            <p>Et sa farandole de petits légumes</p>
+                        <!--end starter 1-->
+                        <div class="detailed-menu">
+                            <!--starter 2-->
+
+                            <h2 class="detailed-menu__title ">Bouchée de homard croustillant</h2>
+                            <div class="detailed-menu__space-card ">
+                                <p class=detailed-menu__title--light>Et sa farandole de petits légumes</p>
+                                <p class="detailed-menu__price ">35€</p>
+                            </div>
                         </div>
-                        <p>35€</p>
-                    </div>
-                    <!--end starter 2-->
-                    <div>
-                        <!--starter 3-->
-                        <div>
-                            <!--block text starter-->
-                            <h2>Velouté de cèpes</h2>
-                            <p>Aux truffes</p>
+                        <!--end starter 2-->
+                        <div class="detailed-menu">
+                            <!--starter 3-->
+                            <h2 class="detailed-menu__title ">Velouté de cèpes</h2>
+                            <div class="detailed-menu__space-card ">
+                                <p class=detailed-menu__title--light>Aux truffes</p>
+                                <p class="detailed-menu__price ">20€</p>
+                            </div>
                         </div>
-                        <p>20€</p>
+
+                        <!--end starter 3-->
                     </div>
-                    <!--end starter 3-->
+                    <!-- end "detailed-menu__starters "-->
                 </div>
-                <!-- end "entrées"-->
-                <div>
-                    <!-- "plats"-->
-                    <p>Plats</p>
+                <!-- end "entrées "-->
+                <div class="block-menu__section">
+                    <!-- "plats "-->
+                    <p class="block-menu__meal-heading">Plats</p>
                     <div>
-                        <!--main course 1-->
-                        <div>
-                            <!--block text main course-->
-                            <h2>Poulet rôti aux herbes de Provence</h2>
-                            <p>Et sa crème de truffe</p>
+                        <div class="detailed-menu__meals ">
+                            <div class="detailed-menu">
+                                <!--main course 1-->
+                                <h2 class="detailed-menu__title ">Poulet rôti aux herbes de Provence s</h2>
+                                <div class="detailed-menu__space-card ">
+                                    <p class="detailed-menu__title--light ">Et sa crème de truffe</p>
+                                    <p class="detailed-menu__price ">40€</p>
+                                </div>
+                            </div>
+                            <!--end main course 1-->
+
+                            <div class="detailed-menu">
+                                <!--main course 2-->
+                                <h2 class="detailed-menu__title">Langouste rôtie</h2>
+                                <div class="detailed-menu__space-card ">
+                                    <p class="detailed-menu__title--light ">Et ses légumes de saison</p>
+                                    <p class="detailed-menu__price ">35€</p>
+                                    <!-- weird display -->
+                                </div>
+                            </div>
+                            <!--end main course 2-->
+                            <div class="detailed-menu">
+                                <!--main course 3-->
+                                <h2 class="detailed-menu__title ">Côte de boeuf Angus </h2>
+                                <div class="detailed-menu__space-card ">
+                                    <p class="detailed-menu__title--light ">Et sa purée de panais</p>
+                                    <p class="detailed-menu__price ">44€</p>
+                                </div>
+                            </div>
+                            <!--end main course 3-->
                         </div>
-                        <p>40€</p>
                     </div>
-                    <!--end main course 1-->
-                    <div>
-                        <!--main course 2-->
-                        <div>
-                            <!--block text main course-->
-                            <h2>Langouste rôtie</h2>
-                            <p>Et ses légumes de saison</p>
-                        </div>
-                        <p>35€</p>
-                    </div>
-                    <!--end main course 2-->
-                    <div>
-                        <!--main course 3-->
-                        <div>
-                            <!--block text main course-->
-                            <h2>Côte de boeuf Angus</h2>
-                            <p>Et sa purée de panais</p>
-                        </div>
-                        <p>44€</p>
-                    </div>
-                    <!--end main course 3-->
+                    <!-- end "detailed-menu__meals "-->
                 </div>
-                <!-- end "plats"-->
-                <div>
-                    <!-- "desserts"-->
-                    <p>Desserts</p>
-                    <div>
-                        <!--dessert 1-->
-                        <div>
-                            <!--block text dessert-->
-                            <h2>Farandole de desserts</h2>
-                            <p>Du chef</p>
+                <!-- end "plats "-->
+                <div class="block-menu__section">
+                    <!-- "desserts "-->
+                    <p class="block-menu__meal-heading ">Desserts</p>
+                    <div class="detailed-menu__desserts ">
+                        <div class="detailed-menu">
+                            <!--dessert 1-->
+                            <h2 class="detailed-menu__title ">Farandole de desserts</h2>
+                            <div class="detailed-menu__space-card ">
+                                <p class="detailed-menu__title--light ">Du chef</p>
+                                <p class=" detailed-menu__price ">18€</p>
+                            </div>
                         </div>
-                        <p>18€</p>
-                    </div>
-                    <!--end dessert 1-->
-                    <div>
-                        <!--dessert 2-->
-                        <div>
-                            <!--block text dessert-->
-                            <h2>Crème brulée</h2>
-                            <p>Revisitée</p>
+                        <!--end dessert 1-->
+                        <div class="detailed-menu ">
+                            <!--dessert 2-->
+                            <h2 class="detailed-menu__title ">Crème brulée</h2>
+                            <div class="detailed-menu__space-card ">
+                                <p class="detailed-menu__title--light ">Revisitée</p>
+                                <p class="detailed-menu__price ">22€</p>
+                            </div>
                         </div>
-                        <p>22€</p>
-                    </div>
-                    <!--end dessert 2-->
-                    <div>
-                        <!--dessert 3-->
-                        <div>
-                            <!--block text dessert-->
-                            <h2>Tiramisu</h2>
-                            <p>À la noisette</p>
+                        <!--end dessert 2-->
+                        <div class="detailed-menu ">
+                            <!--dessert 3-->
+                            <h2 class="detailed-menu__title ">Tiramisu </h2>
+                            <div class="detailed-menu__space-card ">
+                                <p class="detailed-menu__title--light ">À la noisette</p>
+                                <p class="detailed-menu__price ">23€</p>
+                            </div>
                         </div>
-                        <p>23€</p>
+                        <!--end dessert 3-->
                     </div>
-                    <!--end dessert 3-->
+                    <!-- end "detailed-menu__meals "-->
                 </div>
-                <!-- end "desserts"-->
+                <!-- end "desserts "-->
             </div>
             <!--end all card-->
-            <button>Commander</button>
+            <div class="btn-2 ">
+                <button class="btn ">Commander</button>
+            </div>
         </section>
-        <!--end section 1-->
+        <!--end Menu section-->
     </main>
-    <footer class="footer-container ">
+    <footer class="footer-container footer--page-menu ">
         <p class="logo-font ">ohmyfood</p>
         <div class="f ">
             <!--group 1-->
@@ -156,10 +168,12 @@
             <a class="text__footer " href="# ">Mentions légales</a>
         </div>
         <div class="f ">
-            <a class="text__footer " href="# ">Contact</a>
+            <a class="text__footer " href="mailto:contact@ohmyfood.com ">Contact</a>
         </div>
     </footer>
 
 </body>
+
+</html>
 
 </html>
