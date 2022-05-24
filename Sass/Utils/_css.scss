@@ -503,7 +503,7 @@
           .block-menu {
               top: 350px;
               &__heading {
-                  justify-content: center;
+                  justify-content: flex-start;
                   gap: 60px;
               }
               &__section {
