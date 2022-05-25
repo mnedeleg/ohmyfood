@@ -311,6 +311,9 @@
         &__space-card {
             display: flex;
             justify-content: space-between;
+            // overflow: hidden;
+            // white-space: nowrap;
+            // width: 80%;
         }
         &__title {
             @include card-title;
@@ -328,6 +331,12 @@
     }
 }
 
+.detailed-menu__space-card:hover {
+    text-overflow: ellipsis;
+    width: 20px;
+    // everything that goes beyond the white card...so //do i need to give a width to description..price..ec..
+}
+
 .checked:hover::after {
     display: flex;
     justify-content: center;
@@ -341,27 +350,26 @@
     font-variant: normal;
     text-rendering: auto;
     position: absolute;
-    animation: checked 400ms;
+    // animation: checked 400ms;
 }
 
-@keyframes checked {
-    0% {
-        transform: rotate(0deg);
-    }
-    25% {
-        transform: rotate(45deg);
-    }
-    50% {
-        transform: rotate(90deg)
-    }
-    75% {
-        transform: rotate(180deg)
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
+// @keyframes checked {
+//     0% {
+//         transform: rotate(0deg);
+//     }
+//     25% {
+//         transform: rotate(45deg);
+//     }
+//     50% {
+//         transform: rotate(90deg)
+//     }
+//     75% {
+//         transform: rotate(180deg)
+//     }
+//     100% {
+//         transform: rotate(360deg);
+//     }
+// }
 .detailed-menu::after {
     content: "";
     display: none;
@@ -376,10 +384,6 @@
     transform-origin: right;
     animation: slide 250ms linear;
     // animation doesn't start from very beginning / can't place it on the right side of the card
-}
-
-.detailed-menu:hover::after {
-    display: flex;
 }
 
 @keyframes slide {
@@ -652,8 +656,14 @@
             width: 13%;
         }
         .detailed-menu {
-            width: 400px auto;
-            height: auto;
+            // width: 400px auto;
+            // height: auto;
+            overflow: hidden;
+            white-space: nowrap;
+            &.detailed-menu__space-card {
+                text-overflow: ellipsis;
+                width: 20px;
+            }
         }
     }
     .footer--page-menu {
