@@ -458,7 +458,7 @@ div {
 .block-menu .detailed-menu:hover .detailed-menu__title {
   text-overflow: ellipsis;
   overflow: hidden;
-  white-space: none;
+  white-space: pre;
   transition: all 500ms;
 }
 .block-menu .detailed-menu:hover .fa-circle-check {
@@ -468,7 +468,7 @@ div {
 .block-menu .detailed-menu:hover .detailed-menu__title--light {
   text-overflow: ellipsis;
   overflow: hidden;
-  white-space: none;
+  white-space: pre;
   transition: all 500ms;
 }
 .block-menu .detailed-menu__info {
@@ -481,11 +481,17 @@ div {
   justify-content: space-between;
 }
 .block-menu .detailed-menu__title {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: pre;
   font-size: 20px;
   font-weight: 700;
   margin-bottom: 5px;
 }
 .block-menu .detailed-menu__title--light {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: pre;
   font-size: 15px;
   font-weight: 300;
 }
